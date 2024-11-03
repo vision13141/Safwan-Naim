@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "text": "Graphic Design",
+        "stp": 70,
+        "catagory": "Branding"
+    },
+    {
+        "id": 2,
+        "text": "Web Designing",
+        "stp": 85,
+        "catagory": "Photography"
+    },
+    {
+        "id": 3,
+        "text": "Brand Design",
+        "stp": 65,
+        "catagory": "Fashion"
+    },
+    {
+        "id": 4,
+        "text": "Web Development",
+        "stp": 40,
+        "catagory": "Product"
+    }
+]
