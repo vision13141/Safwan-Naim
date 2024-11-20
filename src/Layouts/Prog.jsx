@@ -25,8 +25,9 @@ const Prog = ({ stp, text }) => {
   return (
     <div>
 
-      <div className="w-[160px] h-[160px] mx-auto relative">
-        <svg className='w-[160px] h-[160px]' viewBox={`0 0 160 160`}>
+      <div className="lg:w-[160px] lg:h-[160px] w-[30vw] h-[30vw] mx-auto relative">
+
+        <svg className='lg:w-[160px] lg:h-[160px] w-[30vw] h-[30vw]' viewBox={`0 0 160 160`}>
 
           <circle cx={160 / 2} cy={160 / 2} className='circle-bg' r={radius} fill='none' stroke='#DDD' strokeWidth={`10px`} />
 
@@ -34,30 +35,14 @@ const Prog = ({ stp, text }) => {
             strokeLinecap='round'
             strokeDasharray={strokeArr}
             strokeDashoffset={strokeOffset} />
+
         </svg>
 
         <h2
-          className='text-[#E5745D] font-Vollkorn font-bold text-[30px] absolute top-[50%] left-[50%] translate-x-[-35%] translate-y-[-50%]'>{offsetNum}%</h2>
+          className='text-[#E5745D] font-Vollkorn font-bold lg:text-[30px] text-[7vw] absolute top-[50%] left-[50%] translate-x-[-35%] translate-y-[-50%]'>{offsetNum}%</h2>
       </div>
 
-      <h2 className='text-[26px] pt-[14px] font-Vollkorn text-[#00413D] font-semibold'>{text}</h2>
-
-      {/* <div className="relative">
-        <div className="w-[160px] h-[160px] relative">
-
-          <div className="w-full h-full rounded-[50%] bg-gray-200"></div>
-
-          <div className="w-[140px] h-[140px] rounded-[50%] bg-white absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%]">
-            <div className="font-bold text-[30px] h-full w-full flex items-center justify-center">
-              <h2 className='text-[#E5745D] font-Vollkorn'>{per}%</h2>
-            </div>
-          </div>
-        </div>
-
-        <svg className='absolute top-0 left-0' height="160" width="160" >
-          <circle r="75" cx="80" cy="80" stroke=' #E5745D' fill='none' strokeWidth={`10px`} strokeLinecap='round' strokeDasharray={`470`} strokeDashoffset={num} />
-        </svg>
-      </div> */}
+      <h2 className='lg:text-[26px] text-base pt-[14px] text-center font-Vollkorn text-[#00413D] font-semibold'>{text}</h2>
     </div>
   )
 }

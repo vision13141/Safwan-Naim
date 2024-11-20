@@ -6,7 +6,7 @@ import Vector from '../assets/Vector.png'
 
 const ClientCard = () => {
     return (
-        <div className="w-[570px] h-[260px] relative">
+        <div className="lg:w-[570px] lg:h-[260px] relative">
             <div className="h-[10px] bg-[#E5745D]"></div>
 
             <div className="h-[140px] flex items-center pl-[35px] shadowName">

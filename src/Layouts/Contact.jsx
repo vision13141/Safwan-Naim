@@ -5,9 +5,9 @@ import CommonButton from '../Component/CommonButton'
 
 const Contact = () => {
     return (
-        <div className='flex justify-between w-[100%] h-[78vh]'>
+        <div className='flex lg:flex-wrap flex-col justify-between w-[100%] h-[78vh]'>
 
-            <div className="w-[470px] h-[580px]">
+            <div className="lg:w-[470px] lg:h-[580px] h-[40vw]">
 
                 <iframe
                     className='h-full w-full'
@@ -15,25 +15,26 @@ const Contact = () => {
                 </iframe>
             </div>
 
-            <div className="w-[670px] h-[580px] flex justify-center flex-col">
+            <div className="lg:w-[670px] w-[90vw] mx-auto h-[580px] flex justify-center flex-col">
                 <CommonSvgText text={`Get In Touch`} />
                 <CommonTitle text={`Feel Free to Contact`} className={`pt-[25px] pb-[35px]`} />
 
                 <form className='grid grid-cols-2 gap-[30px]'>
-                    <input placeholder='Enter Name' type='text' className='shadowINput  inline-block text-[#00413D] placeholder:text-[#00413D] placeholder:font-Jost placeholder:font-normal w-[300px] h-[40px] outline-none shadowInput' />
+                    <input placeholder='Enter Name' type='text' className='shadowINput pl-2  inline-block text-[#00413D] placeholder:text-[#00413D] placeholder:font-Jost placeholder:font-normal lg:w-[300px] h-[40px] outline-none' />
 
-                    <input placeholder='Enter Email' type='email' className='shadowINput  inline-block text-[#00413D] placeholder:text-[#00413D] placeholder:font-Jost placeholder:font-normal w-[300px] h-[40px] outline-none shadowInput' />
+                    <input placeholder='Enter Email' type='email' className='shadowINput pl-2  inline-block text-[#00413D] placeholder:text-[#00413D] placeholder:font-Jost placeholder:font-normal lg:w-[300px] h-[40px] outline-none' />
 
-                    <input placeholder='Phone' type='text' className='shadowINput  inline-block text-[#00413D] placeholder:text-[#00413D] placeholder:font-Jost placeholder:font-normal w-[300px] h-[40px] outline-none shadowInput' />
+                    <input placeholder='Phone' type='text' className='shadowINput pl-2  inline-block text-[#00413D] placeholder:text-[#00413D] placeholder:font-Jost placeholder:font-normal lg:w-[300px] h-[40px] outline-none' />
 
-                    <input placeholder='Subject' type='text' className='shadowINput  inline-block text-[#00413D] placeholder:text-[#00413D] placeholder:font-Jost placeholder:font-normal w-[300px] h-[40px] outline-none shadowInput' />
+                    <input placeholder='Subject' type='text' className='shadowINput pl-2  inline-block text-[#00413D] placeholder:text-[#00413D] placeholder:font-Jost placeholder:font-normal lg:w-[300px] h-[40px] outline-none' />
 
-                    <input placeholder='Subject' type='text' className='shadowINput inline-block text-[#00413D] placeholder:text-[#00413D] placeholder:font-Jost placeholder:font-normal w-[100%] h-[40px] outline-none shadowInput' />
+                    <input placeholder='Subject' type='text' className='shadowINput pl-2 inline-block text-[#00413D] placeholder:text-[#00413D] placeholder:font-Jost placeholder:font-normal w-[100%] h-[40px] outline-none ' />
                 </form>
 
 
                 <CommonButton text={`Contact Us`} className={`mt-[50px]`} />
             </div>
+
         </div>
     )
 }

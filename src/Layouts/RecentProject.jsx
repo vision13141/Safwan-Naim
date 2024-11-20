@@ -22,16 +22,43 @@ const RecentProject = () => {
         slidesToScroll: 1,
         prevArrow: <SliderButton />,
         nextArrow: <SliderRight />,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 1023,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            },
+            {
+                breakpoint: 639,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
+
     return (
-        <div className='h-[100vh] w-[100%] pt-[50px] relative'>
+        <div className='lg:h-[100vh] lg:w-[100%] lg:px-0 w-[80%] mx-auto pt-[50px] relative'>
             <CommonSvgText text={`Recent Projects`} />
 
-            <div className="pt-[10px] flex justify-between items-center">
+            <div className="pt-[10px] flex items-center">
                 <CommonTitle text={`My Recent Projects`} />
             </div>
 
-            <Slider {...settings} className='pt-[30px]' >
+            <Slider {...settings} className='pt-[30px] w-[100%]' >
                 <RecentProjectC src={recent1} text={`Analytics, UI-Ux`} />
                 <RecentProjectC src={recent2} text={`Mobile App`} />
                 <RecentProjectC src={recent3} text={`Web Development`} />

@@ -32,6 +32,7 @@ function App() {
       </Container>
 
       <Banner />
+
       <Container>
         <Service />
         <About />

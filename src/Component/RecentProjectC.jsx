@@ -3,8 +3,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const RecentProjectC = ({ src, text }) => {
     return (
-        <div className="w-[370px] h-[520px]">
-            <img src={src} alt="" />
+        <div className="lg:w-[370px] lg:h-[520px] max-w-[100%] sm:w-[90%]">
+            <img src={src} alt="" className='w-full' />
 
             <div className="ml-[15px]">
                 <p className={`text-[#E5745D] pt-[15px] font-Vollkorn text-[18px] font-medium leading-normal tracking-[0.36px]`}>

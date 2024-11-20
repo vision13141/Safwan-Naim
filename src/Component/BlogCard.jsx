@@ -10,7 +10,7 @@ const BlogCard = () => {
         day: 'numeric',
     };
     return (
-        <div className="w-[370px] h-[513px]">
+        <div className="lg:w-[370px] h-[513px]">
             <div className="w-[100%] h-[260px] bg-gray-500"></div>
 
             <div className="pl-[20px]">
